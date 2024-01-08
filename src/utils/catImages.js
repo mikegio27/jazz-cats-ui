@@ -11,8 +11,7 @@ const catPic = async () => {
             throw new Error(`HTTP Error! Status: ${response.status}`)
         }
         const data = await response.json()
-        console.log(data)
-        return await data.map(image => image.url)
+        return data.map(image => image.url)
     } catch (err) {
         console.error('Error fetching cat images!', err)
         return []

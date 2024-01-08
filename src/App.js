@@ -21,8 +21,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <Banner images={catImages} interval={50000} />
         Jazz Cats boiiii
+        <Banner images={catImages} interval={10000} />
       </header>
       <Sidebar />
     </div>
